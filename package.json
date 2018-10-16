@@ -1,24 +1,24 @@
 {
-  "name": "tslib",
+  "name": "tsHallLib",
   "version": "0.0.0-development",
   "description": "",
   "keywords": [],
-  "main": "dist/tslib.umd.js",
-  "module": "dist/tslib.es5.js",
-  "typings": "dist/types/tslib.d.ts",
+  "main": "dist/tsHallLib.umd.js",
+  "module": "dist/tsHallLib.es5.js",
+  "typings": "dist/types/tsHallLib.d.ts",
   "files": [
     "dist"
   ],
   "author": "Vlad Ryabinin <vlad.ryabinin@softomate.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladanyes/tsLib"
+    "url": "https://github.com/vladanyes/tsHallLib"
   },
   "release": {
     "analyzeCommits": "@semantic-release/commit-analyzer",
     "verifyConditions": "@semantic-release/npm",
     "prepare": "@semantic-release/npm",
-    "generateNotes" : "@semantic-release/release-notes-generator",
+    "generateNotes": "@semantic-release/release-notes-generator",
     "publish": "@semantic-release/npm",
     "success": false,
     "fail": false,
@@ -97,6 +97,16 @@
       "@commitlint/config-conventional"
     ]
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    "@semantic-release/github"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",

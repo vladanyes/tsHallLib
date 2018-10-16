@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-const libraryName = 'tslib'
+const libraryName = 'tsHallLib'
 
 export default {
   input: `src/${libraryName}.ts`,
