@@ -1,9 +1,11 @@
 {
-  "name": "ts-hall-lib",
+  "name": "hateoas-typescript-model-test",
   "version": "0.0.0-development",
   "description": "",
   "keywords": [],
-  "typings": "dist/types/ts-hall-lib.d.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es5.js",
+  "typings": "dist/types/hateoas-typescript-models.d.ts",
   "files": [
     "dist"
   ],
