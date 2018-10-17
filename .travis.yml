@@ -11,11 +11,6 @@ node_js:
   - node
 script:
   - npm run test:prod && npm run build
-jobs:
-  include:
-  - stage: Produce Coverage
-    node_js: node
-    script: cat lcov.info | ./node_modules/coveralls/bin/coveralls.js
 after_success:
   - npm run report-coverage
   - npm run deploy-docs
